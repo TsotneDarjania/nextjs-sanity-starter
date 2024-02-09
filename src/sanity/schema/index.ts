@@ -5,6 +5,7 @@ import { pageSettings } from "./pages/settings";
 import { seo } from "./pages/seo";
 import { header } from "./layout/header/header";
 import { footer } from "./layout/footer/footer";
+import { mainSettings } from "./setting/settings";
 
 export const schema = {
   types: [
@@ -12,6 +13,7 @@ export const schema = {
     page,
     homePage,
     // Settings
+    mainSettings,
     pageSettings,
     seo,
     // Layout
@@ -26,6 +28,7 @@ export const singletonDocId: Record<string, string> = {
   homePage: "homePage",
   header: "header",
   footer: "footer",
+  mainSettings: "mainSettings",
 };
 
-export const singletonTypes = [homePage, header, footer];
+export const singletonTypes = [homePage, header, footer, mainSettings];
