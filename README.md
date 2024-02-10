@@ -1,9 +1,9 @@
-This starter is Intented for Digido's brilliant programmers who has the honor of making a project using NextJS + Sanity
+<h1>This starter is Intented for Digido's brilliant programmers who has the honor of making a project using <span>NextJS + Sanity</span> </h1>
 
 Follow the instructions
-1. git clone
-2. npm install
-3. npm run dev
+<b>1. git clone</b>
+<b>2. npm install</b>
+<b>3. npm run dev</b>
 
 You will also need to create  .env.local file in the root directory
 
