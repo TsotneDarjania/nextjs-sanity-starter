@@ -1,5 +1,5 @@
 import { HomeIcon } from "lucide-react";
-import { defineType } from "@sanity/types";
+import { defineField, defineType } from "@sanity/types";
 import { pageFields } from "./fields";
 import { pageSettings } from "./settings";
 import { seo } from "./seo";
@@ -27,6 +27,11 @@ export const homePage = defineType({
     },
     seo,
     pageSettings,
+    {
+      name: "exampleCTAButton",
+      title: "Example CTA Button",
+      type: "cta",
+    },
     ...pageFields,
   ],
   preview: {
