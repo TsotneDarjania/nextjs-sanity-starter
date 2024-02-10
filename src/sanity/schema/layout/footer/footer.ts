@@ -31,10 +31,9 @@ export const footer = defineType({
   icon: Code2,
   fields: [
     {
-      name: "nav",
-      type: "array",
-      title: "Footer Navigation",
-      of: [defineArrayMember(item)],
+      title: "Compant Name",
+      name: "companyName",
+      type: "string",
     },
   ],
   preview: {

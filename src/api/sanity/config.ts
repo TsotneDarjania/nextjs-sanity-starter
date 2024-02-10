@@ -1,10 +1,7 @@
-import { createClient } from "next-sanity";
+import SanityClient from "next-sanity-client";
 
-const config = {
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
-  apiVersion: "2024-02-09",
-  useCdn: false,
-};
-
-export const client = createClient(config);
+export const client = new SanityClient({
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "YOUR_PROJECT_ID",
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "YOUR_DATASET",
+  useCdn: false, // production should be true
+});

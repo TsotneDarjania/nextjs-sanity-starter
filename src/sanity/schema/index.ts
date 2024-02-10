@@ -6,6 +6,7 @@ import { seo } from "./pages/seo";
 import { header } from "./layout/header/header";
 import { footer } from "./layout/footer/footer";
 import { mainSettings } from "./setting/settings";
+import { ctaButton } from "./components/buttons/cta";
 
 export const schema = {
   types: [
@@ -21,6 +22,8 @@ export const schema = {
     footer,
     // Sections
     exampleSection,
+    // Buttons
+    ctaButton,
   ],
 };
 
