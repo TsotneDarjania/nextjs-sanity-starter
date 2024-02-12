@@ -1,4 +1,4 @@
-import { sanityLoader } from "@/api/sanity/sanityLoader";
+import { sanityLoader } from "@/sanity/client/sanityLoader";
 import SanityImage from "@/ui/images/SanityImage";
 import Link from "next/link";
 

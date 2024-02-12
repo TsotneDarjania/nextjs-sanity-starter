@@ -1,4 +1,4 @@
-import { sanityLoader } from "@/api/sanity/sanityLoader";
+import { sanityLoader } from "@/sanity/client/sanityLoader";
 
 export async function Footer() {
   const data = await sanityLoader.loadFooter();

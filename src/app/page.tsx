@@ -1,5 +1,5 @@
-import { homePageQueryOptions } from "@/api/sanity/queryOptions";
-import { sanityLoader } from "@/api/sanity/sanityLoader";
+import { homePageQueryOptions } from "@/sanity/client/queryOptions";
+import { sanityLoader } from "@/sanity/client/sanityLoader";
 import { Layout } from "@/ui";
 import { CtaButton } from "@/ui/buttons";
 import Sections from "@/utils/Sections";
