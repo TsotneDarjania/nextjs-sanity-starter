@@ -6,7 +6,7 @@ export async function Header() {
   const data = await sanityLoader.loadHeader();
 
   return (
-    <header className=" flex justify-between px-6 py-2 items-center">
+    <header className="flex fixed left-0 top-0 w-full justify-between px-6 py-2 items-center">
       {/* Company Logo */}
       <Link href="/">
         <SanityImage

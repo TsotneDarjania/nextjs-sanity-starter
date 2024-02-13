@@ -7,7 +7,7 @@ export default async function Page() {
   return (
     <Layout>
       {/* Sections */}
-      <Sections value={data.sections} />
+      <Sections className="mt-20" value={data.sections} />
     </Layout>
   );
 }

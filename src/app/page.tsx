@@ -13,7 +13,7 @@ export default async function Home() {
       {/* Example Cta Button */}
       <CtaButton cta={homePage.exampleCTAButton} />
       {/* Sections */}
-      <Sections value={homePage.sections} />
+      <Sections className="mt-20" value={homePage.sections} />
     </Layout>
   );
 }

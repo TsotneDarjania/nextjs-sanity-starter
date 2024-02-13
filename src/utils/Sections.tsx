@@ -15,7 +15,13 @@ function renderComponent(
   return <Component {...value} />;
 }
 
-export default function Sections({ value }: { value: any }) {
+export default function Sections({
+  value,
+  className,
+}: {
+  value: any;
+  className?: string;
+}) {
   const components: PortableTextComponents = {
     types: {
       exampleSection: (input: ComponentInput) =>
@@ -23,5 +29,9 @@ export default function Sections({ value }: { value: any }) {
     },
   };
 
-  return <PortableText components={components} value={value} />;
+  return (
+    <div className={className}>
+      <PortableText components={components} value={value} />
+    </div>
+  );
 }
