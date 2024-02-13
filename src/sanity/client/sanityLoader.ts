@@ -5,6 +5,7 @@ import {
   FooterType,
   HeaderType,
   HomePageType,
+  PageReferences,
   PageType,
 } from "@/types/sanityTypes";
 
@@ -58,6 +59,13 @@ export class SanityLoader {
   loadCustomQuery(query: string) {
     return client.fetch({
       query: query,
+      config: this.queryConfig,
+    });
+  }
+
+  loadSiteMap(): Promise<PageReferences> {
+    return client.fetch({
+      query: `*[(_type == "page") || (_type == "homePage")]`,
       config: this.queryConfig,
     });
   }

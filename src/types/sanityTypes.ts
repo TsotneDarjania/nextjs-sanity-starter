@@ -22,6 +22,11 @@ type PageBaseType = {
   };
 };
 
+export type PageReferences = {
+  slug: { _type: string; current: string };
+  _type: string;
+}[];
+
 // Layout Types
 type headerItemType = {
   link: string;
