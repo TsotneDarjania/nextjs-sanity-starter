@@ -13,6 +13,8 @@ export const projectId = assertValue(
 
 export const studioUrl = "/studio";
 
+export const SANITY_STUDIO_PREVIEW_URL = "http://localhost:3000";
+
 function assertValue<T>(v: T | undefined, errorMessage: string): T {
   if (v === undefined) {
     throw new Error(errorMessage);
