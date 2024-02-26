@@ -11,13 +11,14 @@ export default async function Home() {
   const homePage = await sanityLoader.loadHomePage(homePageQueryOptions);
 
   return (
-    <PageLayout>
-      {/* Example Cta Button */}
-      <CtaButton cta={homePage.exampleCTAButton} />
-      {/* Sections */}
-      <Sections className="mt-20" value={homePage.sections} />
-
+    <>
+      <PageLayout>
+        {/* Example Cta Button */}
+        <CtaButton cta={homePage.exampleCTAButton} />
+        {/* Sections */}
+        <Sections className="mt-20" value={homePage.sections} />
+      </PageLayout>
       {draftMode().isEnabled && <VisualEditing zIndex={1000} />}
-    </PageLayout>
+    </>
   );
 }
