@@ -65,6 +65,7 @@ export class SanityLoader {
 
   loadSiteMap(): Promise<PageReferences> {
     return client.fetch({
+      // query should be changed to get all routes when we have more than only pages
       query: `*[(_type == "page")]`,
       config: this.queryConfig,
     });
