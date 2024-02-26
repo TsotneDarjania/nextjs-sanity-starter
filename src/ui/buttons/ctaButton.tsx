@@ -7,7 +7,7 @@ export function CtaButton({ cta }: { cta: any }) {
 
   return (
     <Link
-      className=" borrder bg-slate-600 text-white p-5 rounded-lg absolute m-auto top-0 bottom-0 left-0 right-0 w-fit h-fit "
+      className="border bg-neutral-600 rounded-sm text-white px-2 py-4 text-sm absolute m-auto top-0 bottom-0 left-0 right-0 w-fit h-fit "
       href={href}
     >
       {label}

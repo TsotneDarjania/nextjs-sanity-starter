@@ -6,11 +6,11 @@ export async function Header() {
   const data = await sanityLoader.loadHeader();
 
   return (
-    <header className="flex fixed left-0 top-0 w-full justify-between px-6 py-2 items-center">
+    <header className="flex fixed border-b-2 left-0 top-0 w-full justify-between pr-6 pl-2 py-3 items-center">
       {/* Company Logo */}
-      <Link href="/">
+      <Link className="" href="/">
         <SanityImage
-          className="opacity-30 rounded-[100%] "
+          className="w-[70px] custom-shadow -mt-1 opacity-50"
           height={70}
           width={70}
           image={data?.logo}
@@ -20,13 +20,14 @@ export async function Header() {
       {/* Navigation */}
       <nav className=" flex gap-x-10 ">
         {data.nav.map((item, index) => (
-          <a
-            className=" underline text-gray-700 px-10 py-2 transition-all rounded-md hover:text-white hover:bg-slate-950 "
+          <Link
+            target="_blank"
+            className="relative text-neutral-700 underline-hover transition-all duration-300 hover:text-yellow-800 "
             href={item?.link}
             key={`nav_item_${index}`}
           >
-            {item?.title}
-          </a>
+            {item?.title.toUpperCase()}
+          </Link>
         ))}
       </nav>
     </header>
