@@ -11,7 +11,7 @@ import {
 
 export class SanityLoader {
   queryConfig: FetchConfig = {
-    cache: "no-cache", // in production, this should be "stale-while-revalidate, but i am not sure about this one, need to check it out."
+    cache: "no-store", // in production, this should be "stale-while-revalidate, but i am not sure about this one, need to check it out."
     next: { revalidate: 1 }, // in production, this should be 60 or more
   };
 
@@ -65,7 +65,7 @@ export class SanityLoader {
 
   loadSiteMap(): Promise<PageReferences> {
     return client.fetch({
-      query: `*[(_type == "page") || (_type == "homePage")]`,
+      query: `*[(_type == "page")]`,
       config: this.queryConfig,
     });
   }
