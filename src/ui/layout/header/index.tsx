@@ -18,7 +18,7 @@ export async function Header() {
       </Link>
 
       {/* Navigation */}
-      <nav className=" flex gap-x-10 ">
+      <nav className=" hidden lg:flex gap-x-10 ">
         {data.nav.map((item, index) => (
           <Link
             target="_blank"
