@@ -1,20 +1,59 @@
 This starter is Intented for Digido's brilliant programmers who has the honor of making a project using <h2> NextJS 14 + Sanity </h2>
-<h2>Follow the instructions:</h2>
-<ul>
-<li><b> git clone</b></li>
-<li><b> npm install</b></li>
-<li><b> npm run dev</b></li>
-</ul>
 
-You will also need to create  <b>.env.local</b> file in the root directory
-Enter this data in it (hope this is  a private repository)
 
-NEXT_PUBLIC_SANITY_PROJECT_ID="wonyy34p"
-NEXT_PUBLIC_SANITY_DATASET="production"
-SANITY_API_READ_TOKEN="skhZjOX3cjHKjWfZbw7xFeDgwbrxx2LsuOwaU6ejtQXXHAjSRnyADnApDQzgfXnsS7DdEh5uZ3rth75b3LxXcXwQTlN7slwRG60HotcMkLIob3tH9lg80o
-gmIJEagMFfFaJRITOkyCvSBBFTtkEGxugyzThd6GaPrkoS9M4HK3oc331o1cYU"
+# NextJS 14 + Sanity Starter
 
-<br />
-These data can be changed...
-<br />
+This repository is a starter template for building web applications with Sanity CMS and Next.js 14
+
+To begin, follow these steps to set up your Sanity project:
+
+## Deployment
+
+To begin, follow these steps to set up your Sanity project:
+
+
+#### STEP 1. Create a New Project
+First, you need to register on Sanity and create your account. Then, you need to create a new project. For that, you can run this command:
+```bash
+  npm create sanity@latest
+```
+
+Follow the simple instructions. Upon project creation, you'll obtain a new project ID and dataset. Remember, the objective is solely to acquire these parameters.
+
+#### STEP 2. Change Parameters
+Next, clone this repository and modify the .env.local file with your new project ID and dataset.
+
+![App Screenshot](https://i.ibb.co/JxD3dQK/screen.png)
+
+
+#### STEP 3. Run Project
+After that, run the following commands as usual:
+```bash
+  npm install
+  npm run dev
+```
+That's all.  Happy Coding 😊
+
+## Important files and folders
+
+| File(s)               | Description                                            |
+|-----------------------|--------------------------------------------------------|
+| sanity.config.ts      | Config file for Sanity Studio          
+| /app/page.tsx      | Landing page for /.                                    |
+| /app/studio/[[...index]].tsx| Where Sanity Studio is mounted                  |
+| /sanity/schema/index.tsx    | Where Sanity Studio gets its content types from       |
+| .env.local        | Configuration for the Sanity project and dataset      |
+| /sanity/client/config.ts | Sanity client configured based on env.ts          
+| tailwind.config.js    | Tailwind config. Only applies to files listed under content |
+
+#### WHAT YOU'LL GET:
+
+| Category         | Description   |
+|------------------|---------------|
+| **Framework**    | NextJS 14     |
+| **Use Case**     | Boilerplate   |
+| **CSS**          | Tailwind CSS  |
+| **Content Platform** | Sanity    |
+
+
 <h3>Documentation for this repository is under development. Please wait while detailed documentation is added</h3>
