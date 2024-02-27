@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/locale-is-is": "^1.1.1",
     "@sanity/types": "^3.28.0",
     "lucide-react": "^0.323.0",
     "next": "14.1.0",

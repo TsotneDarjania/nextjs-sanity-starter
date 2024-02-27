@@ -1,5 +1,6 @@
 import { defineConfig } from "sanity";
 import { presentationTool } from "sanity/presentation";
+import { isISLocale } from "@sanity/locale-is-is";
 
 import {
   projectId,
@@ -40,6 +41,7 @@ const config = defineConfig({
       previewUrl: SANITY_STUDIO_PREVIEW_URL,
     }),
     media(),
+    isISLocale(),
   ],
 });
 
