@@ -1,14 +1,10 @@
-This starter is Intented for Digido's brilliant programmers who has the honor of making a project using
+This starter is Intented for Digido's brilliant programmers who has the honor of making a project using NextJS 14 + Sanity
 # NextJS 14 + Sanity Starter
-
 This repository is a starter template for building web applications with Sanity CMS and Next.js 14
-
 To begin, follow these steps to set up your Sanity project:
 
 ## Deployment
-
 To begin, follow these steps to set up your Sanity project:
-
 
 #### STEP 1. Create a New Project
 First, you need to register on Sanity and create your account. Then, you need to create a new project. For that, you can run this command:
@@ -22,7 +18,6 @@ Follow the simple instructions. Upon project creation, you'll obtain a new proje
 Next, clone this repository and modify the .env.local file with your new project ID and dataset.
 
 ![App Screenshot](https://i.ibb.co/JxD3dQK/screen.png)
-
 
 #### STEP 3. Run Project
 After that, run the following commands as usual:
