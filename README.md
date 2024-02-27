@@ -1,6 +1,4 @@
-This starter is Intented for Digido's brilliant programmers who has the honor of making a project using <h2> NextJS 14 + Sanity </h2>
-
-
+This starter is Intented for Digido's brilliant programmers who has the honor of making a project using
 # NextJS 14 + Sanity Starter
 
 This repository is a starter template for building web applications with Sanity CMS and Next.js 14
