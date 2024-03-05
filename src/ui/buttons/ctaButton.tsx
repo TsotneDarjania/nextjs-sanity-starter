@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 export function CtaButton({ cta }: { cta: any }) {
+  if (cta === undefined) return null;
+
   const { label, page, link } = cta;
   //It needs to refactored to use the resolveHref function
   const href = (page && page.slug?.current) || link || "";

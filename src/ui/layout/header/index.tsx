@@ -4,7 +4,6 @@ import Link from "next/link";
 
 export async function Header() {
   const data = await sanityLoader.loadHeader();
-
   return (
     <header className="flex fixed border-b-2 left-0 top-0 w-full justify-between pr-6 pl-2 py-3 items-center">
       {/* Company Logo */}
@@ -19,7 +18,7 @@ export async function Header() {
 
       {/* Navigation */}
       <nav className=" hidden lg:flex gap-x-10 ">
-        {data.nav.map((item, index) => (
+        {data?.nav.map((item, index) => (
           <Link
             target="_blank"
             className="relative text-neutral-700 underline-hover transition-all duration-300 hover:text-yellow-800 "
